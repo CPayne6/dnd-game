@@ -1,0 +1,4 @@
+{
+	"name": "ws-event-server/devcontainer",
+	"build": { "dockerfile": "Dockerfile" }
+}
