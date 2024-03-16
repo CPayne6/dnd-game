@@ -1,4 +1,14 @@
 {
 	"name": "ws-event-server/devcontainer",
-	"build": { "dockerfile": "Dockerfile" }
+	"build": {
+		"dockerfile": "Dockerfile"
+	},
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"streetsidesoftware.code-spell-checker",
+				"esbenp.prettier-vscode"
+			]
+		}
+	}
 }
