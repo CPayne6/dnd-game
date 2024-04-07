@@ -47,4 +47,32 @@ export class Roller {
 
     return results
   }
+
+  rollD4() {
+    return dice.d4.roll()
+  }
+
+  rollD6() {
+    return dice.d6.roll()
+  }
+
+  rollD8() {
+    return dice.d8.roll()
+  }
+
+  rollD10() {
+    return dice.d10.roll()
+  }
+
+  rollD12() {
+    return dice.d12.roll()
+  }
+
+  rollD20() {
+    return dice.d20.roll()
+  }
+
+  rollD100() {
+    return dice.d100.roll()
+  }
 }

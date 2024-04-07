@@ -1,7 +1,7 @@
 
 export const items = ['shield']
 
-export type ItemName = typeof items[number]
+export type ItemName = typeof items[number] | string
 
 export class Item {
   name: string

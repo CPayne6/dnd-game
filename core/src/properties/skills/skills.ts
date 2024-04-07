@@ -20,7 +20,7 @@ const skillsList = [
   'survival'
 ] as const
 
-type SkillName = typeof skillsList[number]
+export type SkillName = typeof skillsList[number]
 
 export class Skills {
   proficiencies: Record<SkillName, boolean>

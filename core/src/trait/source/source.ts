@@ -1,4 +1,4 @@
-import { ItemName } from '../../../item/item'
+import { ItemName } from '../../item/item'
 import { BackgroundName } from '../../background'
 import { ClassName } from '../../classes'
 import { FeatName } from '../../feat'

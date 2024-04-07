@@ -1,6 +1,7 @@
 import { AbilityScore } from "./properties/ability-score"
 import { SavingThrow, Skills } from './properties'
-import { Trait } from "./trait/trait"
+import { Trait } from "../trait/trait"
+import { Creature } from '../creature/creature'
 
 interface CharacterArgs {
   scores: AbilityScore,
@@ -8,28 +9,21 @@ interface CharacterArgs {
   savingThrows: SavingThrow
 }
 
-export class Character {
+export class Character extends Creature {
   readonly name: string
-  readonly abilityScores: AbilityScore
   readonly skills: Skills
   readonly savingThrows: SavingThrow
-  readonly items: null
   readonly traits: Trait[]
 
 
   constructor(name: string, args?: CharacterArgs) {
+    super(name, {})
     this.name = name
     this.abilityScores = args?.scores ?? new AbilityScore()
     this.skills = args?.skills ?? new Skills()
     this.savingThrows = args?.savingThrows ?? new SavingThrow()
   }
 
-  getInitiativeModifier() {
-    return this.abilityScores.toModifiers().modifiers.dex
-  }
 
-  getPassivePerception() {
-
-  }
 }
 

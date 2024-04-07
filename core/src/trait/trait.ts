@@ -1,13 +1,17 @@
 import { AbilityModifier } from "../modifier";
 import { Source } from "./source";
 
-export class Trait {
+type Effect = {
+  type: 'modifier',
+  options: {}
+} | 
+
+export interface Trait {
   source: Source
+  effect: Effect
+
   modifier: AbilityModifier
   effects: any[]
   description: string
-
-  constructor(){
-    
-  }
+  properties: any[]
 }
